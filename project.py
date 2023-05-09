@@ -23,7 +23,7 @@ def index():
               hand,age,educ,ses,mmse,cdr,etiv,nwbv,asf]
       print(data)
       redirect('/result')
-    return render_template('form (1).html')
+    return render_template('form.html')
 
 @app.route('/result', methods=['GET', 'POST'])
 def result():
