@@ -1,5 +1,9 @@
 from flask import Flask, render_template, request,redirect
+import pandas as pd
+import joblib
+from predict import load_model_1, load_model_2, predict
 app = Flask(__name__)
+
 
 
 @app.route('/',methods=['GET', 'POST'])
@@ -21,8 +25,14 @@ def index():
       asf = request.form.get('ASF')
       data = [user_name,visit_date,mr_delay,mf,
               hand,age,educ,ses,mmse,cdr,etiv,nwbv,asf]
-      print(data)
-      redirect('/result')
+      prediction = predict(load_model_1(), visit_date, mr_delay, mf, age, educ, ses, mmse, cdr, etiv, nwbv, asf)
+      if prediction == 0:
+        prediction = 'Converted'
+      elif prediction == 1:
+        prediction = 'Dementia'
+      else:
+        prediction = 'Normal'
+      return render_template('result.html', prediction=prediction, data=data)
     return render_template('form.html')
 
 @app.route('/result', methods=['GET', 'POST'])
