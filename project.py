@@ -37,7 +37,10 @@ def index():
 
 @app.route('/result', methods=['GET', 'POST'])
 def result():
-    return render_template('result.html')
+    return render_template('Form.html')
+@app.route('/about' )
+def About():
+    return render_template('About.html')
 
 
 if __name__ == '__main__':

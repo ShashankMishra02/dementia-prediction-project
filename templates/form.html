@@ -3,6 +3,7 @@
 {% block css %}
   <style>
     body{
+      background-image: url("/static/images/img.jpeg");
       margin-top: 0;
     }
     label{
@@ -185,29 +186,30 @@
 
 {% block body %}
   <div class="container-fluid login-box rounded">
+   
     <h2>Patient Details form</h2>
 
     <!-- Detail Form -->
     <form method = "POST" >
       <div class="row padding " >
         <div class="col-sm-5 col-md-6 " style="border-right:2px dotted white; ">
-          <label>Name</label>
+          <label>Name(Patient Name)</label>
           <div class="user-box">
             <input type="text" name="user_Name" >
           </div>
-          <label>Visit</label>
+          <label>Visit(No.of visit)</label>
           <div class="user-box">
             <input type="number" name="Visit" >
           </div>
-          <label>MR Delay</label>
+          <label>MR Delay(Input magnetic resonance (MR) images)</label>
           <div class="user-box">
             <input type="number" name="MR Delay" >
           </div>
-          <label>M/F</label>
+          <label>M/F(Patient gender)</label>
           <div class="user-box">
             <input type="text" name="Male/Female" >
           </div>
-          <label>Hand</label>
+          <label>Hand(Patient hand)</label>
           <div class="user-box">
             <input type="text" name="Right/Left" >
           </div>
@@ -221,27 +223,27 @@
           </div>
         </div>
         <div class="col-sm-5 col-md-6">
-          <label>Age</label>
+          <label>Age(Patient age)</label>
           <div class="user-box">
             <input type="number" name="Age" >
           </div>
-          <label>EDUC</label>
+          <label>EDUC(Patient education detail)</label>
           <div class="user-box">
             <input type="number" name="EDUC" >
           </div>
-          <label> SES</label>
+          <label> SES(Socioeconomic status )</label>
           <div class="user-box">
             <input type="number" name=" SES" >
           </div>
-          <label> MMSE</label>
+          <label> MMSE(Mini‐Mental State Examination )</label>
           <div class="user-box">
             <input type="number" name=" MMSE" >
           </div>
-          <label>CDR</label>
+          <label>CDR(Clinical Dementia Rating,range from 0 (no impairment) to 3 (severe impairment). )</label>
           <div class="user-box">
             <input type="number" name="CDR" >
           </div>
-          <label>eTIV</label>
+          <label>eTIV(estimated total intracranial volume)</label>
           <div class="user-box">
             <input type="number" name="eTIV" >
           </div>
