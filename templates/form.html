@@ -2,20 +2,27 @@
 
 {% block css %}
   <style>
+    html{
+      margin-top: 0;
+      height:150%;
+      
+    }
     body{
       background-image: url("/static/images/img.jpeg");
       margin-top: 0;
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding:0;
+      font-family: sans-serif;
+      background-color: darkcyan;
+
     }
     label{
       color:white;
     }
 
-    body {
-      margin:0;
-      padding:0;
-      font-family: sans-serif;
-      background-color: darkcyan;
-    }
+
 
     .login-box {
       position:absolute;
@@ -28,7 +35,7 @@
       transform: translate(-50%, -50%);
       background: rgba(0,0,0,.5);
       box-sizing: border-box;
-      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      box-shadow: 0 20px 25px rgba(0,0,0,.6);
       border-radius: 10px;
     }
 

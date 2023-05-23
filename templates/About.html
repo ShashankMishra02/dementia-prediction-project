@@ -6,14 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>h1 {text-align: center;
+<style>
+    body{
+        background-color:  aqua;
+        background-image: url('static/images/pic1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+    .a{
+        
+        margin-bottom: 0;
+        padding: 0;
+        background-color: rgba(0,0,0,0.5);
+        height: 120%;   
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
 
-background-color:;}
-body{
-    background-color:  aqua;
-}</style>
+    h1 {
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 60px;
+        color:white;
+        text-shadow: 3px 3px 5px #000000;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    h3{
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 30px;
+        color:white;
+        text-shadow: 3px 3px 5px #000000;
+        text-transform: uppercase;
+    }
+    p{
+        font-family:sans-serif;
+        font-weight: medium;
+        font-size: 18px;
+        color:white;
+        text-shadow: 3px 3px 5px #000000;
+    }
+    ul{
+        font-family:sans-serif;
+        font-weight: medium;
+        font-size: 18px;
+        color:white;
+        text-shadow: 3px 3px 5px #000000;
+    }
+    li{
+        font-family:sans-serif;
+        font-weight: medium;
+        font-size: 18px;
+        color:white;
+        text-shadow: 3px 3px 5px #000000;
+    }
+    
+</style>
 <body>
-    <div> <h1 >About Dementia Prediction</h1> <br>
+    <div class="a"> <h1 >About Dementia Prediction</h1> <br>
 
         <ul>
             <li><h3>In This Project,We use 2 Algorithm:</h3></li> 
@@ -24,8 +77,8 @@ body{
                 trees to improve the classification accuracy and reduce overfitting. </li>  
 <div><p> Dataset---
     We pick dataset form Kaggle and our dataset name is <i>CAD dementia dataset.</i>  </h3> 
-    
-    Coloums 
+    <br>
+    Columns 
     <ul>
         <li>Visit - Number of visit </li>
         <li>MR.Delay </li>
